@@ -8,63 +8,114 @@
     <title>Hull University Guide</title>
 </head>
 <body>
-    
 
-    <div class="header-nav">
+    <button class="page-turn-btn" id="left-btn"></button>
+    <button class="page-turn-btn" id="right-btn"></button>
 
-        <div class="profile-box">
-            <div class="profile-circle">
-            </div>
-        </div>
+    <div class="carousel">
 
-        <div class="page-title">
-            <h2>Hull University Guide</h2>
-        </div>
+        <div class="page-container">
 
-    </div>
+            <div class="page-box" id="menu-page">
 
+                <div class="menu-header">
+                    <div class="profile-box">
+                        <div class="big-icon-circle"></div>
+                    </div>
 
-    <div class="main-menu">
+                    <div class="misc-text">
+                        Hull University Guide
+                    </div>
 
-        <div class="menu-section">
-
-            <div class="menu-item">
-                <h2>Edit Journey</h2>
-            </div>
-    
-            <div class="menu-item">
-                <h2>My Profile</h2>
-                <div class="notifications">
-                    <p>2</p>
+                    <div class="pillow"></div>
                 </div>
+
+                <div class="cross-bar-hidden"></div>
+
+                <div class="menu-box">
+                    <button class="menu-btn">Edit Journey</button>
+                    <button class="menu-btn">My Profile</button>
+                    <button class="menu-btn">View Events</button>
+                    <button class="menu-btn">Buy Gems</button>
+                </div>
+
+                <div class="menu-box">
+                    <button class="menu-btn">Settings</button>
+                    <button class="menu-btn">Exit</button>
+                </div>
+
+            
             </div>
     
-            <div class="menu-item">
-                <h2>View Events</h2>
+            <div class="page-box" id="map-page">
+
+
+                <div class="page-banner">
+                    <div class="profile-box">
+                        <div class="big-icon-circle"></div>
+                    </div>
+
+                    <div class="currency-box">
+                        <div class="misc-text">800</div>
+                        <img src="images/jae_currency.png" alt="" id="gems">
+                    </div>
+                </div>
+
+                <div class="search-box">
+                    <div class="search-box-cushion"></div>
+                    <div class="destination-title">Middleton Hall</div>
+                    <div class="search-box-cushion">M</div>
+                </div>
+
+                <div class="cross-bar">
+                    78m • 3 min
+                </div>
+
+                <div class="page-banner">
+                    <div class="profile-box">
+                        <div class="big-icon-circle"></div>
+                    </div>
+                </div>
+            
             </div>
     
-            <div class="menu-item">
-                <h2>Buy Gems</h2>
+            <div class="page-box greenscreen">
+
+                <div class="page-banner">
+                    <div class="profile-box">
+                        <div class="big-icon-circle"></div>
+                    </div>
+
+                    <div class="currency-box">
+                        <div class="misc-text">800</div>
+                        <img src="images/jae_currency.png" alt="" id="gems">
+                    </div>
+                </div>
+
+                <div class="search-box">
+                    <div class="search-box-cushion"></div>
+                    <div class="destination-title">Middleton Hall</div>
+                    <div class="search-box-cushion">M</div>
+                </div>
+
+                <div class="cross-bar-hidden"></div>
+
+                <div class="page-banner">
+                    <div class="profile-box">
+                        <div class="big-icon-circle"></div>
+                    </div>
+                </div>
+
+                <div class="camera-view-footer">
+                    <div class="big-circle"></div>
+                </div>
+            
             </div>
 
         </div>
-
-        <div class="menu-section">
-
-            <div class="menu-item">
-                <h2>Settings</h2>
-            </div>
-
-            <div class="menu-item">
-                <h2>Exit</h2>
-            </div>
-
-        </div>
-
+        
     </div>
 
-    
-
-    <script src="script.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
 </html>
