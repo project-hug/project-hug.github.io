@@ -1,110 +1,185 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-
 body {
     font-family: "Inter", sans-serif;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
     margin: 0;
-    
 }
 
-
-.profile-box {
-    height: 10vh;
-    width: 10vh;
-    background-color: red;
+.page-banner{
+    height: 8vh;
     display: flex;
-    background-color: transparent;
+    margin: 5px 5px;
+    justify-content: space-between;
 }
 
-.profile-circle{
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 90%;
-    width: 90%;
-    border-radius: 100%;
-    margin: auto;
+.profile-box{
+    height: 8vh;
+    width: 8vh;
 }
 
-h2 {
-    font-weight: 200;
+.currency-box{
     color: white;
-}
-
-.page-title {
-    margin: auto;
-}
-
-.header-nav{
-    position: absolute;
-    top: 0;
-    background-color: #2D53D9;
-    height: 10vh;
-    width: 100vw;
+    margin: auto 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 16px;
+    border-radius: 8px;
+    border: 1px solid white;
     display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
 }
 
+.misc-text{
+    color: white;
+    margin: auto 10px;
+}
 
-.main-menu{
+#gems {
+    height: 5vh;
+    width: 5vh;
+}
+
+.big-icon-circle {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+}
+
+.search-box {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+.search-box-cushion{
+    background-color: transparent;
+    width: 15vw;
+}
+
+.cross-bar {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 4px 0;
+    height: 4.5vh;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.cross-bar-hidden {
+    padding: 4px 0;
+    height: 4.5vh;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.camera-view-footer{
     position: absolute;
-    top: 15vh;
+    bottom: 0;
     width: 100vw;
-    background-color: pink;
-    height: 90vh;
-    background-color: white;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.menu-section {
-    margin: 20px 0;
-    background-color: green;
+.big-circle{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 15vh;
+    width: 15vh;
+    border-radius: 100%;
+    border: 4px solid white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+}
+
+.carousel{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.page-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    height: 100vh;
+    width: 300vw;
+}
+
+.page-turn-btn{
+    height: 100vh;
+    width: 10%;
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    z-index: 1000;
+}
+
+#left-btn{
+    left: 0;
+}
+
+#right-btn{
+    right: 0;
+}
+
+.page-box{
+    height: 100%;
+    width: 100vw;
+}
+
+.greenscreen{
+    background-color: #00ff00;
+}
+
+.menu-header{
+    background-color: #2D53D9;
+    display: flex;
+    font-size: 1.5rem;
+    height: 8vh;
+    padding: 5px 5px;
+    justify-content: space-between;
+}
+
+.pillow{
+    height: 8vh;
+    width: 3vh;
+}
+
+.menu-box{
+    margin: 20px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
 }
 
-.menu-item {
+.menu-btn{
     background-color: #D3D3D3;
-    height: 9vh;
-    margin: 5px 0px;
-    display: flex;
-}
-
-.menu-item a {
-    text-decoration: none;
-}
-
-.menu-item h2 {
-    margin: 2.5vh 0;
-    margin-top: 2.5vh;
-    margin-bottom: 2.5vh;
-    margin-left: 5vh;
     color: #404040;
-    width: 60%;
+    margin: 4px 0px;
+    border: none;
+    padding: 4vw 8vw;
+    font-size: 1.5rem;
+    text-align: left;
 }
 
-.menu-item .notifications {
-    background-color: #E34C4C;
-    margin: 10px auto;
-    width: 18%;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    border-radius: 10px;
-}
-
-.menu-item .notifications p {
-    margin: 5px auto;
-}
-
-
-
-.hidden{
-    background-color: white;
-    color: white;
+#map-page{
+    background-image: url("/images/Map.png");
 }
