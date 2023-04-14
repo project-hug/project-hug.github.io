@@ -1,36 +1,58 @@
 
 import {BuildMainMenu} from "./buildmainmenu.js"
+import { BuildMapPage } from "./buildmappage.js";
+import { BuildCameraPage } from "./buildcamerapage.js";
+
+import { BuildBuyGems, BuildEditJourney, BuildMyProfile, BuildViewEvents, BuildSettings, BuildExit } from "./mainmenupages.js";
+
 
 BuildMainMenu();
+BuildMapPage();
+BuildCameraPage();
 
 
+// SwapToPage("My Profile")
 
 
-
-
-
-function SwapToPage(pagename){
+export function SwapToPage(pagename){
 
 
     switch (pagename){
 
         case "Main Menu":
+            BuildMainMenu();
             return;
-        
 
+        /////
+
+        case "Edit Journey":
+            BuildEditJourney();
+            return;
+
+        case "My Profile":
+            BuildMyProfile();
+            return;
+
+        case "View Events":
+            BuildViewEvents();
+            return;
+
+        case "Buy Gems":
+            BuildBuyGems();
+            return;
+
+        /////
+
+        case "Settings":
+            BuildSettings();
+            return;
+
+        case "Exit":
+            BuildExit();
+            return;
 
     }
-
 }
-
-
-
-
-
-
-
-
-
 
 
 ///// sliding pages

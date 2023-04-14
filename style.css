@@ -10,6 +10,17 @@ body {
     margin: 0;
 }
 
+.back-button{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    border: none;
+    color: white;
+    padding: 0 2.5rem;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
 .page-banner{
     height: 8vh;
     display: flex;
@@ -17,9 +28,16 @@ body {
     justify-content: space-between;
 }
 
-.profile-box{
+.icon-box{
     height: 8vh;
     width: 8vh;
+}
+
+
+.big-icon-box{
+    height: 18vh;
+    width: 18vh;
+    margin: 3vh 3vh;
 }
 
 .currency-box{
@@ -44,13 +62,26 @@ body {
     width: 5vh;
 }
 
-.big-icon-circle {
+.profile-icon-circle {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    
     border-radius: 100%;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+    background-image: url("/images/icon_profile.png");
+    background-size: cover;
 }
+
+.memories-icon-circle {
+    height: 100%;
+    width: 100%;
+    
+    border-radius: 100%;
+    background-image: url("/images/icon_memories.png");
+    background-size: cover;
+}
+
+
+
 
 .search-box {
     margin: 10px auto;
@@ -68,11 +99,24 @@ body {
 }
 
 .search-box-cushion{
+    position: relative;
     background-color: transparent;
     width: 15vw;
+    display: flex;
+}
+
+.search-icon {
+    position: absolute;
+    height: 4vh;
+    width: 4vh;
+    background-image: url("/images/MagnifyingGlass.png");
+    background-size: cover;
 }
 
 .cross-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     padding: 4px 0;
     height: 4.5vh;
@@ -99,6 +143,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 8vh 0;
 }
 
 .big-circle{
@@ -182,4 +227,5 @@ body {
 
 #map-page{
     background-image: url("/images/Map.png");
+    background-size: cover;
 }
